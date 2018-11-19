@@ -25,9 +25,6 @@ class InstallController extends Controller
      */
     public function index(Request $request)
     {
-        // Comprobamos si ya se configuro el .env
-        $is_configured = sys_configured();
-        $step = $request->input('step', 1);
         $lang = session('lang') ? session('lang') : 'es';
 
         if( $request->has('lang') ){
@@ -38,7 +35,12 @@ class InstallController extends Controller
 
         \App::setLocale( $lang );
 
-        if( $is_configured && $step < 2 ) {
+        // Borramos el cache
+		Artisan::call('cache:clear');
+        
+        $step = $request->input('step', 1);
+		// Comprobamos si ya se configuro el .env
+        if( sys_configured() && $step < 2 ) {
             return redirect('install?step=2');
         }
         

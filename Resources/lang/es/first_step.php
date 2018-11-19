@@ -5,7 +5,8 @@ return [
 	'subtitle' => 'PASO #1: Configuración del entorno',
 	'lang' => [
 		'es' => 'Español',
-		'en' => 'Ingles'
+		'en' => 'Ingles',
+		'pt' => 'Portugués'
 	],
 	'form' => [
 		'lang' => 'Idiomás',

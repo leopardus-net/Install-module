@@ -28,6 +28,7 @@
                         <select name="lang" onchange="changeLang(event);">
                             <option @if($lang === 'es') selected @endif value="es">@lang('install::first_step.lang.es')</option>
                             <option @if($lang === 'en') selected @endif value="en">@lang('install::first_step.lang.en')</option>
+                            <option @if($lang === 'pt') selected @endif value="pt">@lang('install::first_step.lang.pt')</option>
                         </select>
                     </div>
                 </div>

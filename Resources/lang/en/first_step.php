@@ -5,7 +5,8 @@ return [
 	'subtitle' => 'STEP #1: Environment configuration',
 	'lang' => [
 		'es' => 'Spanish',
-		'en' => 'English'
+		'en' => 'English',
+		'pt' => 'Portuguese'
 	],
 	'form' => [
 		'lang' => 'Languajes',

@@ -172,7 +172,8 @@ class InstallController extends Controller
                     profile()->makeTab([
                         'name' => [
                             'es' => 'Información basica',
-                            'en' => 'Basic Information'
+                            'en' => 'Basic Information',
+                            'pt' => 'Informação básica'
                         ],
                         'url' => '/profile/information-tab'
                     ]);
@@ -181,7 +182,8 @@ class InstallController extends Controller
                     profile()->settings()->makeTab([
                         'name' => [
                             'es' => 'Información basica',
-                            'en' => 'Basic Information'
+                            'en' => 'Basic Information',
+                            'pt' => 'Informação básica'
                         ],
                         'url' => '/profile/settings/information-tab'
                     ]);
@@ -189,7 +191,8 @@ class InstallController extends Controller
                     profile()->settings()->makeTab([
                         'name' => [
                             'es' => 'Seguridad',
-                            'en' => 'Security'
+                            'en' => 'Security',
+                            'pt' => 'Segurança'
                         ],
                         'url' => '/profile/settings/security-tab'
                     ]);
